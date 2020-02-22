@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    
+    <style>
+/*Declar An Animation Object Using @keyframes*/
+        @keyframes  n{
+            /*from{
+                background-color:red;
+            }
+            to{
+                background-color:yellow;
+                width:700px;
+            }*/
+            10% {
+                background-color: red;
+            }
+            30% {
+                background-color: yellow;
+            }
+            50% {
+                background-color: pink;
+            }
+            80% {
+                background-color: cyan;
+            }
+            90% {
+                background-color: green;
+            }
+        }
+
+        section{
+            width:500px;
+            height:400px;
+            border:2px solid black;
+            margin:50px auto;
+            /*use animation using -webkit-animation:n*/
+            -webkit-animation:n;
+            -webkit-animation-duration:2s;
+            -webkit-animation-iteration-count:infinite;
+            -webkit-animation-direction:alternate-reverse;
+            /*-webkit-animation-delay:3s;*/
+        }
+    </style>
+</head>
+<body>
+    <section>
+
+    </section>
+</body>
+</html>
