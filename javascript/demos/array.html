@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>array</title>
+   
+   
+</head>
+<body>
+    <script>
+        var numbers=[1,2,3,4,5,6,7,8,9,10];
+        var sum=0;
+        document.write("<table cellpadding='10' cellspacing='10' border='5' bgcolor='lightyellow' width='150' align='center'>")
+        document.write("<tr><th>numbers</th></tr>")
+        for(var i=0; i<numbers.length;i++){
+            sum+=numbers[i];
+            if(numbers[i]%2==0){
+             document.write("<tr><td bgcolor='pink' align='center'>"+numbers[i]+"</td></tr>");   
+            }
+            else{
+               document.write("<tr><td bgcolor='lightblue' align='center'>"+numbers[i]+"</td></tr>");   
+            }
+            
+        }
+        document.write("<tr><td bgcolor='pink' align='center'>sum= "+sum+"</td></tr>"); 
+        document.write("</table>")
+    </script>
+
+   
+</body>
+</html>
